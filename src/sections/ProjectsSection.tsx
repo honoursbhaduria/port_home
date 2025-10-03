@@ -17,6 +17,24 @@ const projects: ProjectType[] = [
     technologies: ["DRF", "Django", "MongoDB", "Tailwind"],
     liveLink: "https://github.com/honoursbhaduria/Django-From-Zero-to-Pro.git",
   },
+   {
+    image: "/projects/study.png",
+    title: "Study Bud",
+    description:
+      "Study Bud is a chat application where users can chat in specific categories. Both admins and users have their respective roles and permissions.",
+    status: "In Progress",
+    technologies: ["DRF", "Django", "MongoDB", "Tailwind"],
+    liveLink: "https://github.com/honoursbhaduria/study-bud.git",
+  },
+   {
+    image: "/projects/ai_r.png",
+    title: "AI Resume Critiquer (Streamlit)",
+    description:
+      "AI Resume Critiquer is a Streamlit application that analyzes resumes and provides feedback to users.",
+    status: "Completed",
+    technologies: ["Streamlit", "Python", "Django"],
+    liveLink: "https://github.com/honoursbhaduria/AI_python-project.git",
+  },
   
 ];
 
