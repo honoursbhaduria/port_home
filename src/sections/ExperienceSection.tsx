@@ -8,10 +8,10 @@ import { ExperienceType } from "@/types";
 
 const experience: ExperienceType[] = [
   {
-    title: "Freelance Developer",
+    title: "Developer",
     duration: "2024 - Present",
     description:
-      "Worked as a freelance developer, delivering responsive, user-friendly, and efficient web solutions for various clients.",
+      "Worked as a developer, delivering responsive, user-friendly, and efficient web solutions for various clients. ",
     technologies: ["Wordpress", "React", "Tailwind CSS"],
     company: "Self-Employed",
   },
