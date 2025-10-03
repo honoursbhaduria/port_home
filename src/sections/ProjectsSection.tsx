@@ -35,6 +35,15 @@ const projects: ProjectType[] = [
     technologies: ["Streamlit", "Python", "Django"],
     liveLink: "https://github.com/honoursbhaduria/AI_python-project.git",
   },
+   {
+    image: "/projects/imposter.png",
+    title: "Imposter studios",
+    description:
+      "simple html css js project",
+    status: "Completed",
+    technologies: ["html", "css", "js"],
+    liveLink: "https://imposter-studio-7twirnp4n-honoursbhadaurias-projects.vercel.app/",
+  },
   
 ];
 
