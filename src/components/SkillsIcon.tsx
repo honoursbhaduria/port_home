@@ -12,6 +12,35 @@ export default function SkillsIcon({ icon }: { icon: IconsType }) {
       </svg>
     );
 
+    if (icon === "django")
+  return (
+    <svg viewBox="0 0 128 128" width="32" height="32">
+      <path
+        fill="#092E20"
+        d="M0 0v128h128V0H0zm72.6 34.9v59.2c0 14.6-6.5 20.4-18.8 20.4-2.7 0-6.2-.5-8.5-1.3V99c1.6.5 3.6.8 5.6.8 4.9 0 7.1-2.2 7.1-7.7V34.9h14.6zm33.1 0v45c0 15.4-5.6 22.5-18.1 22.5-2.6 0-5.5-.5-7.1-1.1v-13c1.3.4 2.9.6 4.5.6 4.9 0 7.3-2.2 7.3-7.7V34.9h13.4z"
+      />
+    </svg>
+  );
+ 
+  if (icon === "drf")
+  return (
+    <svg viewBox="0 0 128 128" width="32" height="32">
+      <rect width="128" height="128" fill="#a30000" />
+      <text
+        x="50%"
+        y="50%"
+        dominantBaseline="middle"
+        textAnchor="middle"
+        fontSize="36"
+        fontWeight="bold"
+        fill="#fff"
+        fontFamily="Arial, sans-serif"
+      >
+        DRF
+      </text>
+    </svg>
+  );
+
   if (icon === "ts")
     return (
       <svg viewBox="0 0 128 128">

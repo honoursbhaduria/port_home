@@ -7,6 +7,8 @@ export type IconsType =
   | "cpp"
   | "python"
   | "react"
+  | "django"
+  | "drf"
   | "tailwind"
   | "mongodb"
   | "postgre"

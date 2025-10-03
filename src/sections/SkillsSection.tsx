@@ -37,11 +37,10 @@ export default function SkillsSection() {
               <h4 className="text-xl font-semibold">Frameworks</h4>
 
               <div className="mt-4 flex items-center flex-wrap gap-3">
-                <SkillsBadge icon="react">React</SkillsBadge>
-                <SkillsBadge icon="nextjs">Next.js</SkillsBadge>
-                <SkillsBadge icon="nodejs">Node.js</SkillsBadge>
-                <SkillsBadge icon="expressjs">Express</SkillsBadge>
-                <SkillsBadge icon="tailwind">Tailwind CSS</SkillsBadge>
+                <SkillsBadge icon="react">React</SkillsBadge>    
+                <SkillsBadge icon="django">django</SkillsBadge>
+                <SkillsBadge icon="drf">drf</SkillsBadge>
+                <SkillsBadge icon="tailwind">tailwind</SkillsBadge>
               </div>
             </div>
 
