@@ -12,7 +12,7 @@ const experience: ExperienceType[] = [
     duration: "2024 - Present",
     description:
       "Worked as a freelance developer, delivering responsive, user-friendly, and efficient web solutions for various clients.",
-    technologies: ["Wordpress", "React", "Next.js", "Node.js", "Tailwind CSS"],
+    technologies: ["Wordpress", "React", "Tailwind CSS"],
     company: "Self-Employed",
   },
 ];
@@ -27,15 +27,11 @@ export default function ExperienceSection() {
             <p>Experience</p>
           </SectionHeadingPill>
 
-          <SectionHeading subText="Applying my skills in real-world projects to deliver scalable and impactful solutions.">
+          <SectionHeading subText="Applying my skills in real-world projects to deliver scalable and impactful solutions, while creating projects and participating in hackathons.">
             Professional Experience
           </SectionHeading>
 
-          <div className="flex flex-col gap-4">
-            {experience.map((exp) => (
-              <ExperienceCard key={exp.title} experience={exp} />
-            ))}
-          </div>
+         
         </div>
       </section>
 

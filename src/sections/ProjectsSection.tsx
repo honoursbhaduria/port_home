@@ -34,7 +34,7 @@ const projects: ProjectType[] = [
     status: "Completed",
     technologies: ["React", "Jikan Api"],
     liveLink: "https://aniquest-eta.vercel.app",
-    repoLink: "https://github.com/veeral1603/Aniquest",
+    repoLink: "https://github.com/honou",
   },
   {
     image: "/projects/essence.png",
