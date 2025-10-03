@@ -27,7 +27,7 @@ export default function ContactSection() {
           <div className="border border-zinc-900 rounded-md flex items-center justify-center flex-col space-y-3 p-4">
             <div className="flex items-center gap-3">
               <Link
-                href="https://x.com/honoursbhadauria"
+                href="https://x.com/__Honours__"    
                 target="_blank"
                 className="p-2 flex items-center bg-stone-100/5 rounded-full hover:bg-stone-100/10 transition duration-300"
               >
