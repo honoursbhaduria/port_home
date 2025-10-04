@@ -51,6 +51,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body className={`${geist.variable} antialiased relative`}>
         <Navbar />
         <div className="flex flex-col min-h-screen">
