@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Honours Bhadauria | Full-Stack Developer",
     description:
       "Building modern, scalable, and impactful web apps with Next.js, React, Tailwind CSS, Node.js, and MongoDB.",
-    url: "https://yourdomain.com",
+    url: "https://port-home.vercel.app",
     siteName: "Honours Bhadauria Portfolio",
     locale: "en_US",
     type: "website",
