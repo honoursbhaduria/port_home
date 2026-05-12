@@ -10,6 +10,26 @@ import React from "react";
 const projects: ProjectType[] = [
   {
     image: "",
+    title: "Django Zero to Pro Course",
+    description:
+      "Comprehensive course designed to guide you from beginner to advanced levels, with practical projects covering models, views, forms, auth, and deployment.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["Django", "Python"],
+    liveLink: "https://django-from-zero-to-pro.vercel.app/",
+  },
+  {
+    image: "",
+    title: "ESECURE – AI T&C Analyzer",
+    description:
+      "Shipped a Chrome Extension + full-stack web app that ingests raw T&C text and returns a structured Gemini AI analysis including flagged risky clauses and a safety score.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["Flask", "React", "TypeScript", "Gemini API"],
+    liveLink: "https://esecure-orcin.vercel.app/",
+  },
+  {
+    image: "",
     title: "Saathi V2",
     description:
       "Saathi V2 is my latest project, a comprehensive platform designed to provide support and resources for students. It features a modern UI and robust backend for a seamless user experience.",
@@ -50,16 +70,6 @@ const projects: ProjectType[] = [
   },
   {
     image: "",
-    title: "ESECURE – AI T&C Analyzer",
-    description:
-      "Shipped a Chrome Extension + full-stack web app that ingests raw T&C text and returns a structured Gemini AI analysis including flagged risky clauses and a safety score.",
-    status: "Completed",
-    isUpdatingConstantly: true,
-    technologies: ["Flask", "React", "TypeScript", "Gemini API"],
-    liveLink: "https://esecure-orcin.vercel.app/",
-  },
-  {
-    image: "",
     title: "LogScanner – Cybersecurity Log Intelligence",
     description:
       "Real-time log analysis engine using Pathway's streaming dataflow to parse server logs and classify vulnerabilities (SQLi, auth failures) into threat reports.",
@@ -87,16 +97,6 @@ const projects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["React", "Supabase", "RAG", "pgvector"],
     liveLink: "https://moviedog.vercel.app/",
-  },
-  {
-    image: "",
-    title: "Django Zero to Pro Course",
-    description:
-      "Comprehensive course designed to guide you from beginner to advanced levels, with practical projects covering models, views, forms, auth, and deployment.",
-    status: "Completed",
-    isUpdatingConstantly: true,
-    technologies: ["Django", "Python", "GitHub"],
-    liveLink: "https://django-from-zero-to-pro.vercel.app/",
   },
 ];
 
