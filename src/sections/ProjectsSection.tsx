@@ -89,7 +89,7 @@ const projects: ProjectType[] = [
     liveLink: "https://moviedog.vercel.app/",
   },
   {
-    image: "/projects/coursa.png",
+    image: "",
     title: "Django Zero to Pro Course",
     description:
       "Comprehensive course designed to guide you from beginner to advanced levels, with practical projects covering models, views, forms, auth, and deployment.",
