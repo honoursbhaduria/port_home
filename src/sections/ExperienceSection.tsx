@@ -10,6 +10,7 @@ const experience: ExperienceType[] = [
   {
     title: "Backend Intern",
     company: "LawVriksh",
+    companyLink: "https://www.lawvriksh.com/",
     duration: "Apr 2026 - Present",
     description:
       "Developing production-ready backend services for a legal knowledge platform. Focusing on building scalable APIs and managing legal data efficiently using FastAPI.",
@@ -17,7 +18,8 @@ const experience: ExperienceType[] = [
   },
   {
     title: "Backend Developer",
-    company: "Twiggle (twiggle.co.in)",
+    company: "Twiggle",
+    companyLink: "https://www.twiggle.co.in/",
     duration: "2025 - Present",
     description:
       "Engineered production backend services using Django; architected REST APIs at scale for frontend and third-party integrations. Drove reliability improvements in collaboration with the core product team.",
@@ -25,7 +27,8 @@ const experience: ExperienceType[] = [
   },
   {
     title: "Open Source Contributor & Maintainer",
-    company: "CyberVidya (cybervidya.pages.dev)",
+    company: "CyberVidya",
+    companyLink: "https://cybervidya.pages.dev/",
     duration: "2025 - Present",
     description:
       "Co-maintain cybersecurity education platform with 2000+ daily active users; ship features and resolve bugs with 2 maintainers.",

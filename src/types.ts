@@ -49,6 +49,7 @@ export type ProjectType = {
 export type ExperienceType = {
   title: string;
   company?: string;
+  companyLink?: string;
   duration: string;
   description: string;
   technologies: string[];

@@ -1,9 +1,10 @@
 "use client";
-import { Calendar, ChevronRight } from "lucide-react";
+import { Calendar, ChevronRight, ExternalLink } from "lucide-react";
 import React from "react";
 import SkillsBadge from "./SkillsBadge";
 import { ExperienceType } from "@/types";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 export default function ExperienceCard({
   experience,
@@ -17,19 +18,19 @@ export default function ExperienceCard({
       className="p-4 border border-zinc-900 rounded-md cursor-pointer group hover:border-zinc-800 transition duration-300"
       onClick={() => setExpanded((cur) => !cur)}
     >
-      <div className="flex items-center justify-between gap-4  ">
-        <div className="flex items-center gap-1 text-nowrap">
-          <h4 className="text-lg font-semibold">{experience.title}</h4>
+      <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center gap-1 min-w-0">
+          <h4 className="text-lg font-semibold truncate">{experience.title}</h4>
           <ChevronRight
             size={18}
             strokeWidth={3}
-            className={`opacity-0 group-hover:opacity-90 transition duration-300 ${
+            className={`flex-shrink-0 opacity-0 group-hover:opacity-90 transition duration-300 ${
               expanded ? "rotate-90" : ""
             }`}
           />
         </div>
 
-        <div className="px-3 py-1 rounded-full bg-white/5 text-[10px] md:text-xs font-medium flex items-center gap-2 text-nowrap">
+        <div className="flex-shrink-0 px-3 py-1 rounded-full bg-white/5 text-[10px] md:text-xs font-medium flex items-center gap-2 text-nowrap">
           <Calendar className="size-3 md:size-3.5" />
           <p>{experience.duration}</p>
         </div>
@@ -37,7 +38,19 @@ export default function ExperienceCard({
 
       <div className="mt-1">
         {experience.company && (
-          <p className={` text-secondaryText `}>{experience.company}</p>
+          experience.companyLink ? (
+            <Link 
+              href={experience.companyLink} 
+              target="_blank" 
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1 text-secondaryText text-sm hover:text-white transition group/link overflow-hidden max-w-full"
+            >
+              <span className="truncate">{experience.company}</span>
+              <ExternalLink size={12} className="flex-shrink-0 opacity-0 group-hover/link:opacity-100 transition" />
+            </Link>
+          ) : (
+            <p className="text-secondaryText text-sm break-words line-clamp-1">{experience.company}</p>
+          )
         )}
       </div>
 
