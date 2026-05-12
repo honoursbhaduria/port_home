@@ -56,7 +56,7 @@ const projects: ProjectType[] = [
     status: "Completed",
     isUpdatingConstantly: true,
     technologies: ["Flask", "React", "TypeScript", "Gemini API"],
-    liveLink: "https://github.com/honoursbhaduria/ESECURE",
+    liveLink: "https://esecure-orcin.vercel.app/",
   },
   {
     image: "",
