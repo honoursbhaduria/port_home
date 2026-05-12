@@ -96,7 +96,7 @@ const projects: ProjectType[] = [
     status: "Completed",
     isUpdatingConstantly: true,
     technologies: ["Django", "Python", "GitHub"],
-    liveLink: "https://github.com/honoursbhaduria/Django-From-Zero-to-Pro",
+    liveLink: "https://django-from-zero-to-pro.vercel.app/",
   },
 ];
 
