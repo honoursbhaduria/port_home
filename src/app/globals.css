@@ -90,7 +90,7 @@
 }
 
 .main-container {
-  @apply md:min-w-2xl max-w-2xl mx-auto px-5;
+  @apply md:min-w-2xl max-w-2xl mx-auto px-5 w-full overflow-hidden;
 }
 
 :root {
@@ -167,7 +167,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
 }
 
