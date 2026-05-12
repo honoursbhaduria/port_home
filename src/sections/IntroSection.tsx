@@ -42,10 +42,10 @@ export default function IntroSection() {
               <p>
                 I specialize in creating web apps using{" "}
                 <span className="text-white font-medium">
-                  Django, React, Tailwind CSS, Streamlit, Node.js, and MongoDB
+                  Django, React, Next.js, LangChain, Tailwind CSS, and PostgreSQL
                 </span>
                 . I&apos;m Always eager to learn, grow, and take on new
-                challenges.
+                challenges in AI and Full-Stack development.
               </p>
               <p>
                 If my skills can be of value to you,{" "}

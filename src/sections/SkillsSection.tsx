@@ -40,7 +40,24 @@ export default function SkillsSection() {
                 <SkillsBadge icon="react">React</SkillsBadge>    
                 <SkillsBadge icon="django">django</SkillsBadge>
                 <SkillsBadge icon="drf">drf</SkillsBadge>
+                <SkillsBadge icon="fastapi">FastAPI</SkillsBadge>
                 <SkillsBadge icon="tailwind">tailwind</SkillsBadge>
+                <SkillsBadge>Next.js</SkillsBadge>
+                <SkillsBadge>Streamlit</SkillsBadge>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-xl font-semibold">AI / LLM</h4>
+
+              <div className="mt-4 flex items-center flex-wrap gap-3">
+                <SkillsBadge>LangChain</SkillsBadge>
+                <SkillsBadge>LangGraph</SkillsBadge>
+                <SkillsBadge>Gemini API</SkillsBadge>
+                <SkillsBadge icon="tensorflow">TensorFlow</SkillsBadge>
+                <SkillsBadge>OpenAI API</SkillsBadge>
+                <SkillsBadge>Ollama</SkillsBadge>
+                <SkillsBadge>Groq API</SkillsBadge>
               </div>
             </div>
 
@@ -62,6 +79,8 @@ export default function SkillsSection() {
               <div className="mt-4 flex items-center flex-wrap gap-3">
                 <SkillsBadge icon="git">Git</SkillsBadge>
                 <SkillsBadge icon="github">GitHub</SkillsBadge>
+                <SkillsBadge icon="docker">Docker</SkillsBadge>
+                <SkillsBadge icon="aws">AWS</SkillsBadge>
                 <SkillsBadge icon="figma">Figma</SkillsBadge>
                 <SkillsBadge icon="vercel">Vercel</SkillsBadge>
                 <SkillsBadge icon="npm">npm</SkillsBadge>

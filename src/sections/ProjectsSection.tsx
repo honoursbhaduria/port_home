@@ -9,42 +9,95 @@ import React from "react";
 
 const projects: ProjectType[] = [
   {
+    image: "/projects/saathi.png",
+    title: "Saathi V2",
+    description:
+      "Saathi V2 is my latest project, a comprehensive platform designed to provide support and resources for students. It features a modern UI and robust backend for a seamless user experience.",
+    status: "In Progress",
+    isUpdatingConstantly: true,
+    technologies: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    liveLink: "https://saathi-v2.vercel.app/",
+  },
+  {
+    image: "/projects/animekai.png",
+    title: "Anime Kai",
+    description:
+      "A production-ready anime-themed web application to search for your favorite anime and manage your personal watchlist and to-do list. Features real-time search powered by Jikan API and persistence with Neon PostgreSQL.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["React", "Vite", "TypeScript", "PostgreSQL", "Tailwind CSS"],
+    liveLink: "https://anime-kai-rho.vercel.app/",
+  },
+  {
+    image: "/projects/arize.png",
+    title: "Arize – AI Fitness & Health Platform",
+    description:
+      "Production-grade open-source AI fitness platform with multi-agent orchestration using LangGraph; agents handle fitness guidance, medical report OCR analysis, and e-commerce recommendations autonomously.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["LangChain", "LangGraph", "Gemini API", "Python"],
+    liveLink: "https://arize-theta.vercel.app/",
+  },
+  {
+    image: "/projects/plantcare.png",
+    title: "PlantCare AI – Rice Disease Detection",
+    description:
+      "Achieved 96.67% validation accuracy on a 3-class rice leaf disease classifier; benchmarked 6 architectures and selected Xception as optimal via systematic ablation.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["TensorFlow", "Keras", "Python", "Xception"],
+    liveLink: "https://plantcare-ai-4ojf.onrender.com/",
+  },
+  {
+    image: "/projects/esecure.png",
+    title: "ESECURE – AI T&C Analyzer",
+    description:
+      "Shipped a Chrome Extension + full-stack web app that ingests raw T&C text and returns a structured Gemini AI analysis including flagged risky clauses and a safety score.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["Flask", "React", "TypeScript", "Gemini API"],
+    liveLink: "https://github.com/honoursbhaduria/ESECURE",
+  },
+  {
+    image: "/projects/logscanner.png",
+    title: "LogScanner – Cybersecurity Log Intelligence",
+    description:
+      "Real-time log analysis engine using Pathway's streaming dataflow to parse server logs and classify vulnerabilities (SQLi, auth failures) into threat reports.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["Django", "Pathway", "Python", "REST"],
+    liveLink: "https://logscanner-ver.vercel.app/login",
+  },
+  {
+    image: "/projects/canvas4blog.png",
+    title: "Canvas4Blog – RAG Research Blogging",
+    description:
+      "Multi-source RAG pipeline that ingests blogs, chunks and embeds content into a vector store, and auto-drafts context-aware research posts grounded in user knowledge.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["React", "Python", "LangChain", "RAG"],
+    liveLink: "https://canvas4blog.vercel.app/",
+  },
+  {
+    image: "/projects/moviedog.png",
+    title: "MovieDog – Conversational Discovery",
+    description:
+      "RAG-based recommendation agent backed by pgvector semantic search on Supabase; Google OAuth persists user watch history and preferences.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["React", "Supabase", "RAG", "pgvector"],
+    liveLink: "https://moviedog.vercel.app/",
+  },
+  {
     image: "/projects/coursa.png",
     title: "Django Zero to Pro Course",
     description:
-      "Django Zero to Pro is a comprehensive course designed to guide you from beginner to advanced levels, with practical projects that solidify your learning and real-world application.",
-    status: "In Progress",
-    technologies: ["DRF", "Django", "MongoDB", "Tailwind"],
-    liveLink: "https://github.com/honoursbhaduria/Django-From-Zero-to-Pro.git",
-  },
-   {
-    image: "/projects/study.png",
-    title: "Study Bud",
-    description:
-      "Study Bud is a chat application where users can chat in specific categories. Both admins and users have their respective roles and permissions.",
-    status: "In Progress",
-    technologies: ["DRF", "Django", "MongoDB", "Tailwind"],
-    liveLink: "https://github.com/honoursbhaduria/study-bud.git",
-  },
-   {
-    image: "/projects/ai_r.png",
-    title: "AI Resume Critiquer (Streamlit)",
-    description:
-      "AI Resume Critiquer is a Streamlit application that analyzes resumes and provides feedback to users.",
+      "Comprehensive course designed to guide you from beginner to advanced levels, with practical projects covering models, views, forms, auth, and deployment.",
     status: "Completed",
-    technologies: ["Streamlit", "Python", "Django"],
-    liveLink: "https://github.com/honoursbhaduria/AI_python-project.git",
+    isUpdatingConstantly: true,
+    technologies: ["Django", "Python", "GitHub"],
+    liveLink: "https://github.com/honoursbhaduria/Django-From-Zero-to-Pro",
   },
-   {
-    image: "/projects/imposter.png",
-    title: "Imposter studios",
-    description:
-      "simple html css js project",
-    status: "Completed",
-    technologies: ["html", "css", "js"],
-    liveLink: "https://imposter-studio-7twirnp4n-honoursbhadaurias-projects.vercel.app/",
-  },
-  
 ];
 
 export default function ProjectsSection() {
@@ -60,7 +113,18 @@ export default function ProjectsSection() {
           </SectionHeadingPill>
 
           <SectionHeading subText="Projects that reflect my skills, problem-solving mindset, and passion for building impactful digital experiences.">
-            My Creations
+            <div className="flex items-center gap-3">
+              <span>My Creations</span>
+              <div className="flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-full">
+                <div className="relative flex size-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-pink-400 opacity-75"></span>
+                  <span className="relative inline-flex size-2 rounded-full bg-pink-500"></span>
+                </div>
+                <span className="text-xs font-medium text-zinc-400 uppercase tracking-widest">
+                  {projects.length} Projects Live
+                </span>
+              </div>
+            </div>
           </SectionHeading>
 
           <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-1 gap-3">

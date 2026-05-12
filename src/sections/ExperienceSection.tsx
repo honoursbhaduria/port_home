@@ -8,12 +8,28 @@ import { ExperienceType } from "@/types";
 
 const experience: ExperienceType[] = [
   {
-    title: "Developer",
-    duration: "2024 - Present",
+    title: "Backend Intern",
+    company: "LawVriksh",
+    duration: "Apr 2026 - Present",
     description:
-      "Worked as a developer, delivering responsive, user-friendly, and efficient web solutions for various clients. ",
-    technologies: ["Wordpress", "React", "Tailwind CSS"],
-    company: "Self-Employed",
+      "Developing production-ready backend services for a legal knowledge platform. Focusing on building scalable APIs and managing legal data efficiently using FastAPI.",
+    technologies: ["FastAPI", "Python", "REST API", "PostgreSQL"],
+  },
+  {
+    title: "Backend Developer",
+    company: "Twiggle (twiggle.co.in)",
+    duration: "2025 - Present",
+    description:
+      "Engineered production backend services using Django; architected REST APIs at scale for frontend and third-party integrations. Drove reliability improvements in collaboration with the core product team.",
+    technologies: ["Django", "Python", "REST API", "PostgreSQL"],
+  },
+  {
+    title: "Open Source Contributor & Maintainer",
+    company: "CyberVidya (cybervidya.pages.dev)",
+    duration: "2025 - Present",
+    description:
+      "Co-maintain cybersecurity education platform with 2000+ daily active users; ship features and resolve bugs with 2 maintainers.",
+    technologies: ["React", "TypeScript", "Node.js", "Cybersecurity"],
   },
 ];
 
@@ -31,7 +47,11 @@ export default function ExperienceSection() {
             Professional Experience
           </SectionHeading>
 
-         
+          <div className="grid grid-cols-1 gap-4">
+            {experience.map((exp, idx) => (
+              <ExperienceCard key={idx} experience={exp} />
+            ))}
+          </div>
         </div>
       </section>
 

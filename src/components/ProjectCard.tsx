@@ -13,6 +13,8 @@ export default function ProjectCard({
   idx: number;
 }) {
   const isCompleted: boolean = project.status === "Completed";
+  const [imgError, setImgError] = React.useState(false);
+
   return (
     <motion.div
       className="p-1 rounded-md border border-zinc-900 flex gap-3 flex-col md:flex-row cursor-pointer hover:border-zinc-800 transition duration-300"
@@ -20,12 +22,26 @@ export default function ProjectCard({
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3, delay: 0.15 * idx - 0.15 }}
     >
-      <div className="w-full h-[280px] md:h-[200px] md:w-60 overflow-hidden">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover rounded-sm"
-        />
+      <div className="w-full h-[280px] md:h-[200px] md:w-60 overflow-hidden relative bg-zinc-950 flex items-center justify-center rounded-sm border border-zinc-900">
+        {!imgError ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            onError={() => setImgError(true)}
+            className="w-full h-full object-cover rounded-sm"
+          />
+        ) : (
+          <div className="w-full h-full flex flex-col items-center justify-center p-4 text-center bg-gradient-to-br from-zinc-900 to-black">
+            <div className="size-12 rounded-full bg-white/5 flex items-center justify-center mb-2">
+              <span className="text-xl font-bold text-zinc-500">
+                {project.title.charAt(0)}
+              </span>
+            </div>
+            <p className="text-[10px] text-zinc-500 font-medium uppercase tracking-wider">
+              {project.title}
+            </p>
+          </div>
+        )}
       </div>
 
       <div className="space-y-3 flex-1 p-3">
@@ -46,14 +62,21 @@ export default function ProjectCard({
         </div>
 
         <div className="flex items-center justify-between mt-auto">
-          <div
-            className={`px-1 py-1 flex items-center text-[11px] font-normal rounded-full ${
-              isCompleted
-                ? "text-green-400 bg-green-900/10"
-                : "text-yellow-400 bg-yellow-900/10"
-            }`}
-          >
-            {project.status}
+          <div className="flex items-center gap-2">
+            <div
+              className={`px-1 py-1 flex items-center text-[11px] font-normal rounded-full ${
+                isCompleted
+                  ? "text-green-400 bg-green-900/10"
+                  : "text-yellow-400 bg-yellow-900/10"
+              }`}
+            >
+              {project.status}
+            </div>
+            {project.isUpdatingConstantly && (
+              <div className="px-1 py-1 flex items-center text-[11px] font-normal rounded-full text-blue-400 bg-blue-900/10">
+                Updating Constantly
+              </div>
+            )}
           </div>
 
           <div className="flex items-center gap-3">

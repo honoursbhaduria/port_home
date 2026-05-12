@@ -23,6 +23,10 @@ export type IconsType =
   | "bun"
   | "vscode"
   | "wordpress"
+  | "docker"
+  | "aws"
+  | "tensorflow"
+  | "fastapi"
   | undefined;
 
 export type skillsBadgeType = {
@@ -36,6 +40,7 @@ export type ProjectType = {
   title: string;
   description: string;
   status: "Completed" | "In Progress" | "On Hold";
+  isUpdatingConstantly?: boolean;
   technologies: string[];
   liveLink: string;
   repoLink?: string;
