@@ -6,7 +6,7 @@ import FadeIn from "@/components/FadeIn";
 import { FloatingDockWrapper } from "@/components/FloatingDockWrapper";
 
 const geist = Geist({
-  variable: "--font-geist",
+  variable: "--font-geist-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
 });
@@ -50,11 +50,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className={`dark ${geist.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
-      <body className={`${geist.variable} antialiased relative`}>
+      <body className="antialiased relative">
         <Navbar />
         <div className="flex flex-col min-h-screen">
           <FadeIn>
