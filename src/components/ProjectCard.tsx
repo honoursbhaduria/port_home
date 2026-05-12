@@ -31,15 +31,55 @@ export default function ProjectCard({
             className="w-full h-full object-cover rounded-sm"
           />
         ) : (
-          <div className="w-full h-full flex flex-col items-center justify-center p-4 text-center bg-gradient-to-br from-zinc-900 to-black">
-            <div className="size-12 rounded-full bg-white/5 flex items-center justify-center mb-2">
-              <span className="text-xl font-bold text-zinc-500">
-                {project.title.charAt(0)}
-              </span>
+          <div className="w-full h-full relative flex flex-col items-center justify-center overflow-hidden bg-black">
+            {/* Animated Background Proxy */}
+            <div className="absolute inset-0 opacity-20">
+              <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-[spin_20s_linear_infinite] bg-[conic-gradient(from_0deg,transparent,rgba(168,85,247,0.4),transparent)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,black_70%)]" />
             </div>
-            <p className="text-[10px] text-zinc-500 font-medium uppercase tracking-wider">
-              {project.title}
-            </p>
+
+            {/* Geometric Proxy Shapes */}
+            <div className="relative z-10 flex flex-col items-center gap-4">
+              <div className="relative">
+                <motion.div
+                  animate={{
+                    scale: [1, 1.1, 1],
+                    opacity: [0.3, 0.6, 0.3],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                  className="absolute -inset-4 bg-pink-500/20 blur-xl rounded-full"
+                />
+                <div className="size-16 rounded-2xl bg-zinc-900 border border-white/10 flex items-center justify-center shadow-2xl relative z-10">
+                  <span className="text-3xl font-black bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent">
+                    {project.title.charAt(0)}
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <p className="text-[11px] text-white font-bold uppercase tracking-[0.2em]">
+                  {project.title}
+                </p>
+                <div className="h-[1px] w-12 bg-gradient-to-r from-transparent via-zinc-500 to-transparent mt-2" />
+              </div>
+            </div>
+
+            {/* Scanning Line Effect */}
+            <motion.div
+              animate={{
+                top: ["-10%", "110%"],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+              className="absolute left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-pink-500/30 to-transparent z-20"
+            />
           </div>
         )}
       </div>
