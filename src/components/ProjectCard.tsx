@@ -13,7 +13,7 @@ export default function ProjectCard({
   idx: number;
 }) {
   const isCompleted: boolean = project.status === "Completed";
-  const [imgError, setImgError] = React.useState(false);
+  const [imgError, setImgError] = React.useState(!project.image);
 
   return (
     <motion.div
@@ -23,7 +23,7 @@ export default function ProjectCard({
       transition={{ duration: 0.3, delay: 0.15 * idx - 0.15 }}
     >
       <div className="w-full h-[280px] md:h-[200px] md:w-60 overflow-hidden relative bg-zinc-950 flex items-center justify-center rounded-sm border border-zinc-900">
-        {!imgError ? (
+        {!imgError && project.image ? (
           <img
             src={project.image}
             alt={project.title}

@@ -9,7 +9,7 @@ import React from "react";
 
 const projects: ProjectType[] = [
   {
-    image: "/projects/saathi.png",
+    image: "",
     title: "Saathi V2",
     description:
       "Saathi V2 is my latest project, a comprehensive platform designed to provide support and resources for students. It features a modern UI and robust backend for a seamless user experience.",
@@ -19,7 +19,7 @@ const projects: ProjectType[] = [
     liveLink: "https://saathi-v2.vercel.app/",
   },
   {
-    image: "/projects/animekai.png",
+    image: "",
     title: "Anime Kai",
     description:
       "A production-ready anime-themed web application to search for your favorite anime and manage your personal watchlist and to-do list. Features real-time search powered by Jikan API and persistence with Neon PostgreSQL.",
@@ -29,7 +29,7 @@ const projects: ProjectType[] = [
     liveLink: "https://anime-kai-rho.vercel.app/",
   },
   {
-    image: "/projects/arize.png",
+    image: "",
     title: "Arize – AI Fitness & Health Platform",
     description:
       "Production-grade open-source AI fitness platform with multi-agent orchestration using LangGraph; agents handle fitness guidance, medical report OCR analysis, and e-commerce recommendations autonomously.",
@@ -39,7 +39,7 @@ const projects: ProjectType[] = [
     liveLink: "https://arize-theta.vercel.app/",
   },
   {
-    image: "/projects/plantcare.png",
+    image: "",
     title: "PlantCare AI – Rice Disease Detection",
     description:
       "Achieved 96.67% validation accuracy on a 3-class rice leaf disease classifier; benchmarked 6 architectures and selected Xception as optimal via systematic ablation.",
@@ -49,7 +49,7 @@ const projects: ProjectType[] = [
     liveLink: "https://plantcare-ai-4ojf.onrender.com/",
   },
   {
-    image: "/projects/esecure.png",
+    image: "",
     title: "ESECURE – AI T&C Analyzer",
     description:
       "Shipped a Chrome Extension + full-stack web app that ingests raw T&C text and returns a structured Gemini AI analysis including flagged risky clauses and a safety score.",
@@ -59,7 +59,7 @@ const projects: ProjectType[] = [
     liveLink: "https://github.com/honoursbhaduria/ESECURE",
   },
   {
-    image: "/projects/logscanner.png",
+    image: "",
     title: "LogScanner – Cybersecurity Log Intelligence",
     description:
       "Real-time log analysis engine using Pathway's streaming dataflow to parse server logs and classify vulnerabilities (SQLi, auth failures) into threat reports.",
@@ -69,17 +69,17 @@ const projects: ProjectType[] = [
     liveLink: "https://logscanner-ver.vercel.app/login",
   },
   {
-    image: "/projects/canvas4blog.png",
+    image: "",
     title: "Canvas4Blog – RAG Research Blogging",
     description:
-      "Multi-source RAG pipeline that ingests blogs, chunks and embeds content into a vector store, and auto-drafts context-aware research posts grounded in user knowledge.",
+      "Multi-source RAG pipeline that ingests a cluster of user-linked blogs, chunks and embeds content into a vector store, and auto-drafts context-aware research posts grounded in user knowledge.",
     status: "Completed",
     isUpdatingConstantly: true,
     technologies: ["React", "Python", "LangChain", "RAG"],
     liveLink: "https://canvas4blog.vercel.app/",
   },
   {
-    image: "/projects/moviedog.png",
+    image: "",
     title: "MovieDog – Conversational Discovery",
     description:
       "RAG-based recommendation agent backed by pgvector semantic search on Supabase; Google OAuth persists user watch history and preferences.",
