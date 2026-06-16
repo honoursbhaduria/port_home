@@ -19,8 +19,8 @@ export default function SkillsSection() {
             My Toolkit
           </SectionHeading>
 
-          <div className=" flex  flex-col gap-4">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="p-4 border border-zinc-800 border-dotted rounded-xl bg-zinc-950/20">
               <h4 className="text-xl font-semibold">Languages</h4>
 
               <div className="mt-4 flex items-center flex-wrap gap-3">
@@ -33,7 +33,7 @@ export default function SkillsSection() {
               </div>
             </div>
 
-            <div>
+            <div className="p-4 border border-zinc-800 border-dotted rounded-xl bg-zinc-950/20">
               <h4 className="text-xl font-semibold">Frameworks</h4>
 
               <div className="mt-4 flex items-center flex-wrap gap-3">
@@ -47,7 +47,7 @@ export default function SkillsSection() {
               </div>
             </div>
 
-            <div>
+            <div className="p-4 border border-zinc-800 border-dotted rounded-xl bg-zinc-950/20">
               <h4 className="text-xl font-semibold">AI / LLM</h4>
 
               <div className="mt-4 flex items-center flex-wrap gap-3">
@@ -61,7 +61,7 @@ export default function SkillsSection() {
               </div>
             </div>
 
-            <div>
+            <div className="p-4 border border-zinc-800 border-dotted rounded-xl bg-zinc-950/20">
               <h4 className="text-xl font-semibold">Database</h4>
 
               <div className="mt-4 flex items-center flex-wrap gap-3">
@@ -73,7 +73,7 @@ export default function SkillsSection() {
               </div>
             </div>
 
-            <div>
+            <div className="p-4 border border-zinc-800 border-dotted rounded-xl bg-zinc-950/20 md:col-span-2">
               <h4 className="text-xl font-semibold">Tools</h4>
 
               <div className="mt-4 flex items-center flex-wrap gap-3">

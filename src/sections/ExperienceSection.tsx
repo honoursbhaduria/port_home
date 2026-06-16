@@ -8,19 +8,28 @@ import { ExperienceType } from "@/types";
 
 const experience: ExperienceType[] = [
   {
+    title: "NestJS Backend Developer",
+    company: "Pearl Thoughts",
+    companyLink: "https://pearlthoughts.com/",
+    duration: "Jan 2026 - Present",
+    description:
+      "Developing scalable backend architectures using NestJS and TypeScript. Implementing robust microservices and maintaining high-performance APIs for production environments.",
+    technologies: ["NestJS", "TypeScript", "Node.js", "PostgreSQL", "Redis"],
+  },
+  {
     title: "Backend Intern",
     company: "LawVriksh",
     companyLink: "https://www.lawvriksh.com/",
-    duration: "Apr 2026 - Present",
+    duration: "Apr 2026 - May 2026",
     description:
       "Developing production-ready backend services for a legal knowledge platform. Focusing on building scalable APIs and managing legal data efficiently using FastAPI.",
     technologies: ["FastAPI", "Python", "REST API", "PostgreSQL"],
   },
   {
     title: "Backend Developer",
-    company: "Twiggle",
+    company: "Stealth Startup",
     companyLink: "https://www.twiggle.co.in/",
-    duration: "2025 - Present",
+    duration: "Nov 2025 - Apr 2026",
     description:
       "Engineered production backend services using Django; architected REST APIs at scale for frontend and third-party integrations. Drove reliability improvements in collaboration with the core product team.",
     technologies: ["Django", "Python", "REST API", "PostgreSQL"],

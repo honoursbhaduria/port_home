@@ -90,7 +90,7 @@
 }
 
 .main-container {
-  @apply md:min-w-2xl max-w-2xl mx-auto px-5 w-full overflow-hidden;
+  @apply md:min-w-2xl max-w-5xl mx-auto px-5 w-full overflow-hidden;
 }
 
 :root {
