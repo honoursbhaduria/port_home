@@ -9,6 +9,16 @@ import React from "react";
 
 const projects: ProjectType[] = [
   {
+    image: "/projects/cognivault-dev.png",
+    title: "CogniVault – Enterprise Agentic RAG Platform",
+    description:
+      "Enterprise Agentic RAG platform implementing dynamic LangGraph reasoning, zero-trust NeMo guardrails, and two-stage retrieval with Qdrant HNSW vector search and FlashRank reranking.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["LangGraph", "LangChain", "Qdrant", "Python", "React", "TypeScript"],
+    liveLink: "https://cognivault-dev.vercel.app/",
+  },
+  {
     image: "/projects/saathi-v2.png",
     title: "Saathi V2",
     description:
