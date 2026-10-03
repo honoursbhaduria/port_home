@@ -9,6 +9,36 @@ import React from "react";
 
 const projects: ProjectType[] = [
   {
+    image: "/projects/exspo-scholar-ship.png",
+    title: "Scholarship Intelligence Platform",
+    description:
+      "Continuous discovery, evidence verification, and version diff tracking for official Indian education schemes. Tracks 26 crawled items with 96.3% avg confidence, field-by-field diffing, SHA-256 snapshot storage and full repository audit chain.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["Next.js", "TypeScript", "Python", "Web Crawling", "Tailwind CSS"],
+    liveLink: "https://exspo-scholarship-cwarler.vercel.app/",
+  },
+  {
+    image: "/projects/exspo-mailing-agent.png",
+    title: "GoScraping – Influencer Scraping Dashboard",
+    description:
+      "Dashboard developed for scraping data from multiple known platforms. Scrapy + Playwright pipeline discovered 520 profiles (313 qualified), with niche, geography and influencer-scale filters, classification engine, AI personalization and outreach audit log.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["React", "Next.js", "Scrapy", "Playwright", "Python"],
+    liveLink: "https://exspo-mailing-agent-v1.vercel.app/",
+  },
+  {
+    image: "/projects/instant-mechanic.png",
+    title: "Instant Mechanic – AI Car Care Platform",
+    description:
+      "One platform for every car need — instant roadside help in 20 minutes, AI-powered diagnosis, transparent repair bills, and complete car care membership. Delhi NCR's trusted car care with AI Check, live service history and coverage.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "AI Diagnosis"],
+    liveLink: "https://instant-mechanic-task.vercel.app/",
+  },
+  {
     image: "/projects/cognivault-dev.png",
     title: "CogniVault – Enterprise Agentic RAG Platform",
     description:
