@@ -9,6 +9,28 @@ import React from "react";
 
 const projects: ProjectType[] = [
   {
+    image: "/projects/parkezy.png",
+    title: "Parkezy – Smart Parking Marketplace",
+    description:
+      "Two-sided parking marketplace: drivers find nearby spots on a map, book in two taps with Razorpay and unlock gates via a rotating QR code or offline 6-digit PIN; hosts list spaces, scan drivers in and withdraw earnings. Android app plus an 89-route FastAPI backend on PostGIS with a Celery outbox worker.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["React Native", "Expo", "FastAPI", "PostgreSQL", "PostGIS", "Redis", "Celery", "Razorpay"],
+    liveLink: "https://parkezy-landing.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/Parkezy-2.0",
+  },
+  {
+    image: "/projects/checkout-emp.png",
+    title: "Checkout – AI Interview Simulator",
+    description:
+      "Takes a candidate from resume + job description to interview-ready: role intelligence, explainable 7-dimension Job Fit scoring, an adaptive AI voice interview (Screening → Competency → Deep-Dive) with live faster-whisper transcription and Gemini TTS, and a calibrated readiness report with a prep plan.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["React", "FastAPI", "Gemini", "faster-whisper", "Qdrant", "PostgreSQL", "Redis"],
+    liveLink: "https://checkout-emp.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/checkout",
+  },
+  {
     image: "/projects/exspo-scholar-ship.png",
     title: "Scholarship Intelligence Platform",
     description:
