@@ -9,6 +9,17 @@ import React from "react";
 
 const projects: ProjectType[] = [
   {
+    image: "/projects/kestrel.png",
+    title: "Kestrel – AI Design-Review Agent for Architects",
+    description:
+      "Interactive design-review and automated code-compliance platform for architects. Sits inside architectural CAD/BIM workflows to flag standards violations in real time, scan 2D floor plans with live coordinate tracking, compute deterministic buildable envelopes via Shapely & PostGIS, and propose non-destructive geometry fixes.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["TanStack Start", "React 19", "Vite", "GSAP", "FastAPI", "Shapely", "PostGIS", "TypeScript"],
+    liveLink: "https://kestrel-arch.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/KESTREL",
+  },
+  {
     image: "/projects/parkezy.png",
     title: "Parkezy – Smart Parking Marketplace",
     description:
