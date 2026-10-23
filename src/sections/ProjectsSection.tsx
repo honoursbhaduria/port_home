@@ -9,6 +9,17 @@ import React from "react";
 
 const projects: ProjectType[] = [
   {
+    image: "/projects/cybervidya.pages.dev.png",
+    title: "CyberVidya – KIET Attendance & Academic Portal",
+    description:
+      "High-performance student attendance and academic tracking portal for KIET students with 2,000+ daily active users. Features real-time subject-wise attendance analytics, on-demand lecture checkups, dynamic attendance projections, holiday planning calculators, and a local-first zero-credential-leak architecture.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["React 19", "TypeScript", "Tailwind CSS", "Vite", "Cloudflare Pages"],
+    liveLink: "https://cybervidya.pages.dev/",
+    repoLink: "https://github.com/honoursbhaduria/attendance-kiet",
+  },
+  {
     image: "/projects/kestrel.png",
     title: "Kestrel – AI Design-Review Agent for Architects",
     description:
