@@ -25,14 +25,14 @@ export default function ProjectsSection() {
           </SectionHeadingPill>
 
           <SectionHeading subText="Projects categorized by scale and impact — from production systems serving active users, to deep-engineering flagship applications, and specialized developer tools.">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
               <span>My Creations</span>
-              <div className="flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-full">
+              <div className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-0.5 sm:py-1 bg-white/5 border border-white/10 rounded-full">
                 <div className="relative flex size-2">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-pink-400 opacity-75"></span>
                   <span className="relative inline-flex size-2 rounded-full bg-pink-500"></span>
                 </div>
-                <span className="text-xs font-medium text-zinc-400 uppercase tracking-widest">
+                <span className="text-[11px] sm:text-xs font-medium text-zinc-400 uppercase tracking-wider sm:tracking-widest">
                   {projectCounts.total} Projects Live
                 </span>
               </div>
@@ -43,7 +43,7 @@ export default function ProjectsSection() {
           <ProjectTabs activeTab={activeTab} setActiveTab={setActiveTab} />
 
           {/* Categorized Project Sections */}
-          <div className="space-y-14 pt-2">
+          <div className="space-y-10 sm:space-y-14 pt-2">
             {/* 1. Major Projects Section */}
             {(activeTab === "all" || activeTab === "major") && (
               <MajorProjectsSection />

@@ -50,7 +50,7 @@ export default function ProjectTabs({
   ];
 
   return (
-    <div className="flex items-center gap-2 flex-wrap">
+    <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
       {tabs.map((tab) => {
         const Icon = tab.icon;
         const isActive = activeTab === tab.id;
@@ -58,14 +58,14 @@ export default function ProjectTabs({
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`px-3.5 py-2 rounded-xl text-xs md:text-sm font-medium flex items-center gap-2 transition-all duration-200 cursor-pointer ${
+            className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-medium flex items-center gap-1.5 sm:gap-2 transition-all duration-200 cursor-pointer shrink-0 whitespace-nowrap ${
               isActive
                 ? "bg-white text-zinc-950 shadow-lg font-semibold"
                 : "bg-zinc-900/60 hover:bg-zinc-800/80 text-zinc-400 hover:text-zinc-200 border border-zinc-800/80"
             }`}
           >
             <Icon
-              size={15}
+              size={14}
               className={isActive ? tab.activeColor : tab.color}
             />
             <span>{tab.label}</span>

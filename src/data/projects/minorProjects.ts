@@ -2,6 +2,25 @@ import { ProjectType } from "@/types";
 
 export const minorProjects: ProjectType[] = [
   {
+    image: "/projects/minor/windy.png",
+    title: "Windy – GB Wind Forecast Intelligence",
+    description:
+      "Decision-time evaluation engine for GB national wind generation forecasts. Matches Elexon WINDFOR forecasts published by trading decision cutoffs against FUELHH metered outturns to compute MAE, RMSE, WAPE, and bias metrics, featuring an autonomous LangGraph assistant.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: [
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "Python",
+      "LangGraph",
+      "Tailwind CSS",
+      "Groq API",
+    ],
+    liveLink: "https://windy-kappa.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/windy",
+  },
+  {
     image: "/projects/minor/kestrel.png",
     title: "Kestrel – AI Design-Review Agent for Architects",
     description:

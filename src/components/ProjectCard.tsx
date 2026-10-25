@@ -17,10 +17,10 @@ export default function ProjectCard({
 
   return (
     <motion.div
-      className="p-3 md:p-4 rounded-2xl border border-zinc-900/50 bg-zinc-950/20 backdrop-blur-sm flex gap-4 md:gap-8 flex-col md:flex-row cursor-pointer hover:border-zinc-800/80 hover:bg-zinc-900/30 transition-all duration-500 group"
+      className="p-3 sm:p-4 rounded-2xl border border-zinc-900/50 bg-zinc-950/20 backdrop-blur-sm flex gap-4 md:gap-8 flex-col md:flex-row hover:border-zinc-800/80 hover:bg-zinc-900/30 transition-all duration-500 group"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: idx * 0.1 }}
+      transition={{ duration: 0.5, delay: idx * 0.08 }}
     >
       <div className="w-full aspect-[16/10] md:aspect-auto md:h-[240px] md:w-[450px] shrink-0 overflow-hidden relative bg-zinc-950 rounded-xl border border-zinc-900/80 group-hover:border-zinc-700/50 transition-colors duration-500">
         {!imgError && project.image ? (
@@ -84,19 +84,19 @@ export default function ProjectCard({
         )}
       </div>
 
-      <div className="space-y-4 flex-1 py-1 md:py-2 flex flex-col justify-between">
-        <div className="space-y-3">
+      <div className="space-y-3 sm:space-y-4 flex-1 py-1 md:py-2 flex flex-col justify-between">
+        <div className="space-y-2.5 sm:space-y-3">
           <div className="flex items-center justify-between gap-4">
-            <h2 className="text-xl md:text-2xl font-bold tracking-tight text-zinc-100 group-hover:text-white transition-colors">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-zinc-100 group-hover:text-white transition-colors">
               {project.title}
             </h2>
           </div>
 
-          <div className="text-sm md:text-base text-zinc-400 leading-relaxed line-clamp-3 md:line-clamp-4">
+          <div className="text-xs sm:text-sm md:text-base text-zinc-400 leading-relaxed line-clamp-3 md:line-clamp-4">
             <p>{project.description}</p>
           </div>
 
-          <div className="flex items-center gap-2 flex-wrap pt-1">
+          <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap pt-1">
             {project.technologies.map((tech) => (
               <SkillsBadge size="sm" key={tech}>
                 {tech}
@@ -105,8 +105,8 @@ export default function ProjectCard({
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mt-6 pt-4 border-t border-zinc-900/50">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center justify-between gap-3 flex-wrap mt-4 pt-3 border-t border-zinc-900/50">
+          <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
             <div
               className={`px-2.5 py-0.5 flex items-center text-[10px] md:text-[11px] font-bold uppercase tracking-wider rounded-full border ${
                 isCompleted
@@ -123,30 +123,32 @@ export default function ProjectCard({
             )}
           </div>
 
-          <div className="flex items-center gap-4 w-full sm:w-auto justify-between sm:justify-end">
+          <div className="flex items-center gap-3 ml-auto">
             {project.repoLink && (
-              <Link href={project.repoLink} target="_blank" className="hover:scale-110 transition-transform">
+              <Link
+                href={project.repoLink}
+                target="_blank"
+                className="hover:scale-110 transition-transform p-1.5 rounded-lg border border-zinc-800/80 bg-zinc-900/40 text-zinc-400 hover:text-white"
+                title="View Source Code"
+              >
                 <svg
                   viewBox="0 0 128 128"
-                  fill="#71717a"
-                  className="hover:fill-white transition-colors"
-                  width={20}
-                  height={20}
+                  fill="currentColor"
+                  width={18}
+                  height={18}
                 >
-                  <g>
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
-                    ></path>
-                  </g>
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
+                  />
                 </svg>
               </Link>
             )}
             <Link
               href={project.liveLink}
               target="_blank"
-              className="text-xs md:text-sm text-black bg-white hover:bg-zinc-200 active:scale-95 transition-all rounded-lg font-bold px-4 py-2 shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+              className="text-xs md:text-sm text-black bg-white hover:bg-zinc-200 active:scale-95 transition-all rounded-lg font-bold px-3.5 py-1.5 sm:px-4 sm:py-2 shadow-[0_0_20px_rgba(255,255,255,0.1)] whitespace-nowrap"
             >
               Visit Live Site
             </Link>
