@@ -44,8 +44,6 @@ export type ProjectType = {
   technologies: string[];
   liveLink: string;
   repoLink?: string;
-  userStats?: string;
-  category?: string;
 };
 
 export type ExperienceType = {

@@ -17,8 +17,6 @@ export const usersProjects: ProjectType[] = [
     ],
     liveLink: "https://cybervidya.pages.dev/",
     repoLink: "https://github.com/honoursbhaduria/attendance-kiet",
-    userStats: "2,000+ Daily Active Users",
-    category: "Campus Production Portal",
   },
   {
     image: "/projects/users/movie-dog.png",
@@ -29,7 +27,5 @@ export const usersProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["React", "Supabase", "RAG", "pgvector"],
     liveLink: "https://moviedog.vercel.app/",
-    userStats: "Live Active Users & OAuth",
-    category: "Conversational Discovery",
   },
 ];

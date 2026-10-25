@@ -1,16 +1,16 @@
 "use client";
 import React from "react";
-import MajorProjectCard from "@/components/projects/MajorProjectCard";
+import ProjectCard from "@/components/ProjectCard";
 import { majorProjects } from "@/data/projects";
 import { Rocket } from "lucide-react";
 
 export default function MajorProjectsSection() {
   return (
-    <div id="major-projects" className="space-y-5">
-      <div className="flex items-center justify-between flex-wrap gap-2 pb-3 border-b border-zinc-900/80">
+    <div id="major-projects" className="space-y-4">
+      <div className="flex items-center justify-between flex-wrap gap-2 pb-2 border-b border-zinc-900/80">
         <div className="flex items-center gap-3">
-          <div className="p-2.5 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400">
-            <Rocket size={20} />
+          <div className="p-2 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400">
+            <Rocket size={18} />
           </div>
           <div>
             <h4 className="text-xl md:text-2xl font-bold text-zinc-100 flex items-center gap-2">
@@ -21,14 +21,14 @@ export default function MajorProjectsSection() {
             </p>
           </div>
         </div>
-        <span className="text-xs font-semibold px-3 py-1 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20">
-          {majorProjects.length} Flagship Projects
+        <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20">
+          {majorProjects.length} Projects
         </span>
       </div>
 
       <div className="grid grid-cols-1 gap-6">
         {majorProjects.map((project, idx) => (
-          <MajorProjectCard key={project.title} project={project} idx={idx} />
+          <ProjectCard key={project.title} project={project} idx={idx} />
         ))}
       </div>
     </div>

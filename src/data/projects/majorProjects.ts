@@ -20,10 +20,9 @@ export const majorProjects: ProjectType[] = [
     ],
     liveLink: "https://parkezy-landing.vercel.app/",
     repoLink: "https://github.com/honoursbhaduria/Parkezy-2.0",
-    category: "Full-Stack Marketplace",
   },
   {
-    image: "/projects/major/arize...png",
+    image: "/projects/major/arize.png",
     title: "Arize – AI Fitness & Health Platform",
     description:
       "Production-grade open-source AI fitness platform with multi-agent orchestration using LangGraph; agents handle fitness guidance, medical report OCR analysis, and e-commerce recommendations autonomously.",
@@ -31,7 +30,6 @@ export const majorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["LangChain", "LangGraph", "Gemini API", "Python"],
     liveLink: "https://arize-theta.vercel.app/",
-    category: "Multi-Agent AI Platform",
   },
   {
     image: "/projects/major/cognivault-dev.png",
@@ -49,7 +47,6 @@ export const majorProjects: ProjectType[] = [
       "TypeScript",
     ],
     liveLink: "https://cognivault-dev.vercel.app/",
-    category: "Enterprise Agentic RAG",
   },
   {
     image: "/projects/major/anime-kai.png",
@@ -60,7 +57,6 @@ export const majorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["React", "Vite", "TypeScript", "PostgreSQL", "Tailwind CSS"],
     liveLink: "https://anime-kai-rho.vercel.app/",
-    category: "Production Web Application",
   },
   {
     image: "/projects/major/log-scanner.png",
@@ -71,6 +67,5 @@ export const majorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["Django", "Pathway", "Python", "REST"],
     liveLink: "https://logscanner-ver.vercel.app/login",
-    category: "Cybersecurity Stream Engine",
   },
 ];

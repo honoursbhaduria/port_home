@@ -20,7 +20,6 @@ export const minorProjects: ProjectType[] = [
     ],
     liveLink: "https://kestrel-arch.vercel.app/",
     repoLink: "https://github.com/honoursbhaduria/KESTREL",
-    category: "Architecture AI",
   },
   {
     image: "/projects/minor/checkout-emp.png",
@@ -40,7 +39,6 @@ export const minorProjects: ProjectType[] = [
     ],
     liveLink: "https://checkout-emp.vercel.app/",
     repoLink: "https://github.com/honoursbhaduria/checkout",
-    category: "Voice AI Simulator",
   },
   {
     image: "/projects/minor/exspo-scholar-ship.png",
@@ -57,7 +55,6 @@ export const minorProjects: ProjectType[] = [
       "Tailwind CSS",
     ],
     liveLink: "https://exspo-scholarship-cwarler.vercel.app/",
-    category: "Data Verification & Crawling",
   },
   {
     image: "/projects/minor/exspo-mailing-agent.png",
@@ -68,7 +65,6 @@ export const minorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["React", "Next.js", "Scrapy", "Playwright", "Python"],
     liveLink: "https://exspo-mailing-agent-v1.vercel.app/",
-    category: "Automation & Scraping",
   },
   {
     image: "/projects/minor/instant-mechanic.png",
@@ -85,7 +81,6 @@ export const minorProjects: ProjectType[] = [
       "AI Diagnosis",
     ],
     liveLink: "https://instant-mechanic-task.vercel.app/",
-    category: "Automotive Platform",
   },
   {
     image: "/projects/minor/saathi-v2.png",
@@ -96,7 +91,6 @@ export const minorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
     liveLink: "https://saathi-v2.vercel.app/",
-    category: "Student Support Platform",
   },
   {
     image: "/projects/minor/esecure.png",
@@ -107,7 +101,6 @@ export const minorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["Flask", "React", "TypeScript", "Gemini API"],
     liveLink: "https://esecure-orcin.vercel.app/",
-    category: "Chrome Extension & AI",
   },
   {
     image: "/projects/minor/canvas-blog-4u.png",
@@ -118,7 +111,6 @@ export const minorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["React", "Python", "LangChain", "RAG"],
     liveLink: "https://canvas4blog.vercel.app/",
-    category: "RAG Publishing",
   },
   {
     image: "/projects/minor/plantcare-ai.png",
@@ -129,7 +121,6 @@ export const minorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["TensorFlow", "Keras", "Python", "Xception"],
     liveLink: "https://plantcare-ai-4ojf.onrender.com/",
-    category: "Computer Vision",
   },
   {
     image: "/projects/minor/djnagoo-zero-to-pro.png",
@@ -140,6 +131,5 @@ export const minorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["Django", "Python"],
     liveLink: "https://django-from-zero-to-pro.vercel.app/",
-    category: "Developer Course",
   },
 ];

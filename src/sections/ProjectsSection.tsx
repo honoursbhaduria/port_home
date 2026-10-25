@@ -49,7 +49,7 @@ export default function ProjectsSection() {
               <MajorProjectsSection />
             )}
 
-            {/* 2. Minor Projects Section (2-Column Grid) */}
+            {/* 2. Minor Projects Section */}
             {(activeTab === "all" || activeTab === "minor") && (
               <MinorProjectsSection isSingleTab={activeTab === "minor"} />
             )}
