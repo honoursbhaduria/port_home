@@ -50,37 +50,39 @@ export default function ProjectTabs({
   ];
 
   return (
-    <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
-      {tabs.map((tab) => {
-        const Icon = tab.icon;
-        const isActive = activeTab === tab.id;
-        return (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs sm:text-sm font-medium flex items-center gap-1.5 sm:gap-2 transition-all duration-200 cursor-pointer shrink-0 whitespace-nowrap ${
-              isActive
-                ? "bg-white text-zinc-950 shadow-lg font-semibold"
-                : "bg-zinc-900/60 hover:bg-zinc-800/80 text-zinc-400 hover:text-zinc-200 border border-zinc-800/80"
-            }`}
-          >
-            <Icon
-              size={14}
-              className={isActive ? tab.activeColor : tab.color}
-            />
-            <span>{tab.label}</span>
-            <span
-              className={`px-1.5 py-0.5 rounded-full text-[10px] font-bold ${
+    <div className="w-full">
+      <div className="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth py-1 -mx-5 px-5 sm:mx-0 sm:px-0 sm:flex-wrap">
+        {tabs.map((tab) => {
+          const Icon = tab.icon;
+          const isActive = activeTab === tab.id;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium flex items-center gap-2 transition-all duration-200 cursor-pointer shrink-0 whitespace-nowrap active:scale-95 ${
                 isActive
-                  ? "bg-zinc-200 text-zinc-900"
-                  : "bg-zinc-800 text-zinc-400"
+                  ? "bg-white text-zinc-950 shadow-md font-semibold"
+                  : "bg-zinc-900/60 hover:bg-zinc-800/80 text-zinc-400 hover:text-zinc-200 border border-zinc-800/80"
               }`}
             >
-              {tab.count}
-            </span>
-          </button>
-        );
-      })}
+              <Icon
+                size={14}
+                className={`shrink-0 ${isActive ? tab.activeColor : tab.color}`}
+              />
+              <span className="whitespace-nowrap">{tab.label}</span>
+              <span
+                className={`px-1.5 py-0.5 rounded-full text-[10px] font-bold shrink-0 ${
+                  isActive
+                    ? "bg-zinc-200 text-zinc-900"
+                    : "bg-zinc-800 text-zinc-400"
+                }`}
+              >
+                {tab.count}
+              </span>
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }
