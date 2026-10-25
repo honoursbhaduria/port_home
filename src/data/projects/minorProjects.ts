@@ -1,0 +1,145 @@
+import { ProjectType } from "@/types";
+
+export const minorProjects: ProjectType[] = [
+  {
+    image: "/projects/minor/kestrel.png",
+    title: "Kestrel – AI Design-Review Agent for Architects",
+    description:
+      "Interactive design-review and automated code-compliance platform for architects. Sits inside architectural CAD/BIM workflows to flag standards violations in real time, scan 2D floor plans with live coordinate tracking, compute deterministic buildable envelopes via Shapely & PostGIS, and propose non-destructive geometry fixes.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: [
+      "TanStack Start",
+      "React 19",
+      "Vite",
+      "GSAP",
+      "FastAPI",
+      "Shapely",
+      "PostGIS",
+      "TypeScript",
+    ],
+    liveLink: "https://kestrel-arch.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/KESTREL",
+    category: "Architecture AI",
+  },
+  {
+    image: "/projects/minor/checkout-emp.png",
+    title: "Checkout – AI Interview Simulator",
+    description:
+      "Takes a candidate from resume + job description to interview-ready: role intelligence, explainable 7-dimension Job Fit scoring, an adaptive AI voice interview (Screening → Competency → Deep-Dive) with live faster-whisper transcription and Gemini TTS, and a calibrated readiness report with a prep plan.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: [
+      "React",
+      "FastAPI",
+      "Gemini",
+      "faster-whisper",
+      "Qdrant",
+      "PostgreSQL",
+      "Redis",
+    ],
+    liveLink: "https://checkout-emp.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/checkout",
+    category: "Voice AI Simulator",
+  },
+  {
+    image: "/projects/minor/exspo-scholar-ship.png",
+    title: "Scholarship Intelligence Platform",
+    description:
+      "Continuous discovery, evidence verification, and version diff tracking for official Indian education schemes. Tracks 26 crawled items with 96.3% avg confidence, field-by-field diffing, SHA-256 snapshot storage and full repository audit chain.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Python",
+      "Web Crawling",
+      "Tailwind CSS",
+    ],
+    liveLink: "https://exspo-scholarship-cwarler.vercel.app/",
+    category: "Data Verification & Crawling",
+  },
+  {
+    image: "/projects/minor/exspo-mailing-agent.png",
+    title: "GoScraping – Influencer Scraping Dashboard",
+    description:
+      "Dashboard developed for scraping data from multiple known platforms. Scrapy + Playwright pipeline discovered 520 profiles (313 qualified), with niche, geography and influencer-scale filters, classification engine, AI personalization and outreach audit log.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["React", "Next.js", "Scrapy", "Playwright", "Python"],
+    liveLink: "https://exspo-mailing-agent-v1.vercel.app/",
+    category: "Automation & Scraping",
+  },
+  {
+    image: "/projects/minor/instant-mechanic.png",
+    title: "Instant Mechanic – AI Car Care Platform",
+    description:
+      "One platform for every car need — instant roadside help in 20 minutes, AI-powered diagnosis, transparent repair bills, and complete car care membership. Delhi NCR's trusted car care with AI Check, live service history and coverage.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "AI Diagnosis",
+    ],
+    liveLink: "https://instant-mechanic-task.vercel.app/",
+    category: "Automotive Platform",
+  },
+  {
+    image: "/projects/minor/saathi-v2.png",
+    title: "Saathi V2",
+    description:
+      "Saathi V2 is my latest project, a comprehensive platform designed to provide support and resources for students. It features a modern UI and robust backend for a seamless user experience.",
+    status: "In Progress",
+    isUpdatingConstantly: true,
+    technologies: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    liveLink: "https://saathi-v2.vercel.app/",
+    category: "Student Support Platform",
+  },
+  {
+    image: "/projects/minor/esecure.png",
+    title: "ESECURE – AI T&C Analyzer",
+    description:
+      "Shipped a Chrome Extension + full-stack web app that ingests raw T&C text and returns a structured Gemini AI analysis including flagged risky clauses and a safety score.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["Flask", "React", "TypeScript", "Gemini API"],
+    liveLink: "https://esecure-orcin.vercel.app/",
+    category: "Chrome Extension & AI",
+  },
+  {
+    image: "/projects/minor/canvas-blog-4u.png",
+    title: "Canvas4Blog – RAG Research Blogging",
+    description:
+      "Multi-source RAG pipeline that ingests a cluster of user-linked blogs, chunks and embeds content into a vector store, and auto-drafts context-aware research posts grounded in user knowledge.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["React", "Python", "LangChain", "RAG"],
+    liveLink: "https://canvas4blog.vercel.app/",
+    category: "RAG Publishing",
+  },
+  {
+    image: "/projects/minor/plantcare-ai.png",
+    title: "PlantCare AI – Rice Disease Detection",
+    description:
+      "Achieved 96.67% validation accuracy on a 3-class rice leaf disease classifier; benchmarked 6 architectures and selected Xception as optimal via systematic ablation.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["TensorFlow", "Keras", "Python", "Xception"],
+    liveLink: "https://plantcare-ai-4ojf.onrender.com/",
+    category: "Computer Vision",
+  },
+  {
+    image: "/projects/minor/djnagoo-zero-to-pro.png",
+    title: "Django Zero to Pro Course",
+    description:
+      "Comprehensive course designed to guide you from beginner to advanced levels, with practical projects covering models, views, forms, auth, and deployment.",
+    status: "Completed",
+    isUpdatingConstantly: true,
+    technologies: ["Django", "Python"],
+    liveLink: "https://django-from-zero-to-pro.vercel.app/",
+    category: "Developer Course",
+  },
+];
