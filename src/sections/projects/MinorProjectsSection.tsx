@@ -2,7 +2,7 @@
 import React from "react";
 import ProjectCard from "@/components/ProjectCard";
 import { minorProjects } from "@/data/projects";
-import { ChevronDown, ChevronUp, Sparkles } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function MinorProjectsSection({
   isSingleTab = false,
@@ -19,18 +19,13 @@ export default function MinorProjectsSection({
   return (
     <div id="minor-projects" className="space-y-4">
       <div className="flex items-start sm:items-center justify-between flex-wrap gap-2 pb-2 border-b border-zinc-900/80">
-        <div className="flex items-start sm:items-center gap-2.5 sm:gap-3">
-          <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 shrink-0 mt-0.5 sm:mt-0">
-            <Sparkles size={18} />
-          </div>
-          <div>
-            <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-zinc-100 flex items-center gap-2">
-              <span>Minor Projects</span>
-            </h4>
-            <p className="text-xs md:text-sm text-zinc-400 mt-0.5">
-              Targeted tools, hackathon solutions, utilities, and focused experimental platforms.
-            </p>
-          </div>
+        <div>
+          <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-zinc-100 flex items-center gap-2">
+            <span>Minor Projects</span>
+          </h4>
+          <p className="text-xs md:text-sm text-zinc-400 mt-0.5">
+            Targeted tools, hackathon solutions, utilities, and focused experimental platforms.
+          </p>
         </div>
         <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 shrink-0 self-start sm:self-auto">
           {minorProjects.length} Projects

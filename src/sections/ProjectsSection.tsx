@@ -28,10 +28,6 @@ export default function ProjectsSection() {
             <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
               <span>My Creations</span>
               <div className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-0.5 sm:py-1 bg-white/5 border border-white/10 rounded-full">
-                <div className="relative flex size-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-pink-400 opacity-75"></span>
-                  <span className="relative inline-flex size-2 rounded-full bg-pink-500"></span>
-                </div>
                 <span className="text-[11px] sm:text-xs font-medium text-zinc-400 uppercase tracking-wider sm:tracking-widest">
                   {projectCounts.total} Projects Live
                 </span>
