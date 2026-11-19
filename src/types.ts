@@ -27,6 +27,14 @@ export type IconsType =
   | "aws"
   | "tensorflow"
   | "fastapi"
+  | "nextjs"
+  | "streamlit"
+  | "langchain"
+  | "langgraph"
+  | "gemini"
+  | "openai"
+  | "ollama"
+  | "groq"
   | undefined;
 
 export type skillsBadgeType = {
@@ -37,6 +45,7 @@ export type skillsBadgeType = {
 
 export type ProjectType = {
   image: string;
+  video?: string;
   title: string;
   description: string;
   status: "Completed" | "In Progress" | "On Hold";
@@ -47,6 +56,9 @@ export type ProjectType = {
 };
 
 export type ExperienceType = {
+  highlights: string[];
+  image: string;
+  video?: string;
   title: string;
   company?: string;
   companyLink?: string;

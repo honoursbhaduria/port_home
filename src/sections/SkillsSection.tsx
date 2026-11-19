@@ -37,13 +37,13 @@ export default function SkillsSection() {
               <h4 className="text-xl font-semibold">Frameworks</h4>
 
               <div className="mt-4 flex items-center flex-wrap gap-3">
-                <SkillsBadge icon="react">React</SkillsBadge>    
-                <SkillsBadge icon="django">django</SkillsBadge>
-                <SkillsBadge icon="drf">drf</SkillsBadge>
+                <SkillsBadge icon="react">React</SkillsBadge>
+                <SkillsBadge icon="django">Django</SkillsBadge>
+                <SkillsBadge icon="drf">DRF</SkillsBadge>
                 <SkillsBadge icon="fastapi">FastAPI</SkillsBadge>
-                <SkillsBadge icon="tailwind">tailwind</SkillsBadge>
-                <SkillsBadge>Next.js</SkillsBadge>
-                <SkillsBadge>Streamlit</SkillsBadge>
+                <SkillsBadge icon="tailwind">Tailwind CSS</SkillsBadge>
+                <SkillsBadge icon="nextjs">Next.js</SkillsBadge>
+                <SkillsBadge icon="streamlit">Streamlit</SkillsBadge>
               </div>
             </div>
 
@@ -51,13 +51,13 @@ export default function SkillsSection() {
               <h4 className="text-xl font-semibold">AI / LLM</h4>
 
               <div className="mt-4 flex items-center flex-wrap gap-3">
-                <SkillsBadge>LangChain</SkillsBadge>
-                <SkillsBadge>LangGraph</SkillsBadge>
-                <SkillsBadge>Gemini API</SkillsBadge>
+                <SkillsBadge icon="langchain">LangChain</SkillsBadge>
+                <SkillsBadge icon="langgraph">LangGraph</SkillsBadge>
+                <SkillsBadge icon="gemini">Gemini API</SkillsBadge>
                 <SkillsBadge icon="tensorflow">TensorFlow</SkillsBadge>
-                <SkillsBadge>OpenAI API</SkillsBadge>
-                <SkillsBadge>Ollama</SkillsBadge>
-                <SkillsBadge>Groq API</SkillsBadge>
+                <SkillsBadge icon="openai">OpenAI API</SkillsBadge>
+                <SkillsBadge icon="ollama">Ollama</SkillsBadge>
+                <SkillsBadge icon="groq">Groq API</SkillsBadge>
               </div>
             </div>
 

@@ -3,6 +3,7 @@ import { ProjectType } from "@/types";
 export const majorProjects: ProjectType[] = [
   {
     image: "/projects/major/parkezy.png",
+    video: "/projects/major/parkezy.mp4",
     title: "Parkezy – Smart Parking Marketplace",
     description:
       "Two-sided parking marketplace: drivers find nearby spots on a map, book in two taps with Razorpay and unlock gates via a rotating QR code or offline 6-digit PIN; hosts list spaces, scan drivers in and withdraw earnings. Android app plus an 89-route FastAPI backend on PostGIS with a Celery outbox worker.",
@@ -23,6 +24,7 @@ export const majorProjects: ProjectType[] = [
   },
   {
     image: "/projects/major/arize.png",
+    video: "/projects/major/arize.mp4",
     title: "Arize – AI Fitness & Health Platform",
     description:
       "Production-grade open-source AI fitness platform with multi-agent orchestration using LangGraph; agents handle fitness guidance, medical report OCR analysis, and e-commerce recommendations autonomously.",
@@ -30,9 +32,11 @@ export const majorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["LangChain", "LangGraph", "Gemini API", "Python"],
     liveLink: "https://arize-theta.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/ARIZE",
   },
   {
     image: "/projects/major/cognivault-dev.png",
+    video: "/projects/major/cognivault-dev.mp4",
     title: "CogniVault – Enterprise Agentic RAG Platform",
     description:
       "Enterprise Agentic RAG platform implementing dynamic LangGraph reasoning, zero-trust NeMo guardrails, and two-stage retrieval with Qdrant HNSW vector search and FlashRank reranking.",
@@ -47,9 +51,12 @@ export const majorProjects: ProjectType[] = [
       "TypeScript",
     ],
     liveLink: "https://cognivault-dev.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/RAG",
   },
   {
     image: "/projects/major/anime-kai.png",
+    // Animated home-screen capture; a fresh tour requires a demo login.
+    video: "/projects/major/anime-kai.mp4",
     title: "Anime Kai",
     description:
       "A production-ready anime-themed web application to search for your favorite anime and manage your personal watchlist and to-do list. Features real-time search powered by Jikan API and persistence with Neon PostgreSQL.",
@@ -60,12 +67,15 @@ export const majorProjects: ProjectType[] = [
   },
   {
     image: "/projects/major/log-scanner.png",
+    // Animated home-screen capture; a fresh tour requires a demo login.
+    video: "/projects/major/log-scanner.mp4",
     title: "LogScanner – Cybersecurity Log Intelligence",
     description:
       "Real-time log analysis engine using Pathway's streaming dataflow to parse server logs and classify vulnerabilities (SQLi, auth failures) into threat reports.",
     status: "Completed",
     isUpdatingConstantly: true,
     technologies: ["Django", "Pathway", "Python", "REST"],
-    liveLink: "https://logscanner-ver.vercel.app/login",
+    liveLink: "https://logscanner-ver.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/YOUR_LOGS_CHECKER",
   },
 ];

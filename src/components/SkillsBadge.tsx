@@ -15,8 +15,8 @@ export default function SkillsBadge({
           : "font-medium text-sm px-3 py-1 "
       } `}
     >
-      {size === "base" && (
-        <div className="p-1.5 rounded-md bg-white/10 size-6">
+      {size === "base" && icon && (
+        <div aria-hidden="true" className="flex size-7 shrink-0 items-center justify-center rounded-md bg-white/5 p-1">
           <SkillsIcon icon={icon} />
         </div>
       )}

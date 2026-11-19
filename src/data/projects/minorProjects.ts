@@ -3,6 +3,7 @@ import { ProjectType } from "@/types";
 export const minorProjects: ProjectType[] = [
   {
     image: "/projects/minor/windy.png",
+    video: "/projects/minor/windy.mp4",
     title: "Windy – GB Wind Forecast Intelligence",
     description:
       "Decision-time evaluation engine for GB national wind generation forecasts. Matches Elexon WINDFOR forecasts published by trading decision cutoffs against FUELHH metered outturns to compute MAE, RMSE, WAPE, and bias metrics, featuring an autonomous LangGraph assistant.",
@@ -22,6 +23,7 @@ export const minorProjects: ProjectType[] = [
   },
   {
     image: "/projects/minor/kestrel.png",
+    video: "/projects/minor/kestrel.mp4",
     title: "Kestrel – AI Design-Review Agent for Architects",
     description:
       "Interactive design-review and automated code-compliance platform for architects. Sits inside architectural CAD/BIM workflows to flag standards violations in real time, scan 2D floor plans with live coordinate tracking, compute deterministic buildable envelopes via Shapely & PostGIS, and propose non-destructive geometry fixes.",
@@ -42,6 +44,7 @@ export const minorProjects: ProjectType[] = [
   },
   {
     image: "/projects/minor/checkout-emp.png",
+    video: "/projects/minor/checkout-emp.mp4",
     title: "Checkout – AI Interview Simulator",
     description:
       "Takes a candidate from resume + job description to interview-ready: role intelligence, explainable 7-dimension Job Fit scoring, an adaptive AI voice interview (Screening → Competency → Deep-Dive) with live faster-whisper transcription and Gemini TTS, and a calibrated readiness report with a prep plan.",
@@ -61,6 +64,7 @@ export const minorProjects: ProjectType[] = [
   },
   {
     image: "/projects/minor/exspo-scholar-ship.png",
+    video: "/projects/minor/exspo-scholar-ship.mp4",
     title: "Scholarship Intelligence Platform",
     description:
       "Continuous discovery, evidence verification, and version diff tracking for official Indian education schemes. Tracks 26 crawled items with 96.3% avg confidence, field-by-field diffing, SHA-256 snapshot storage and full repository audit chain.",
@@ -74,9 +78,11 @@ export const minorProjects: ProjectType[] = [
       "Tailwind CSS",
     ],
     liveLink: "https://exspo-scholarship-cwarler.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/exspo-scholarship-cwarler",
   },
   {
     image: "/projects/minor/exspo-mailing-agent.png",
+    video: "/projects/minor/exspo-mailing-agent.mp4",
     title: "GoScraping – Influencer Scraping Dashboard",
     description:
       "Dashboard developed for scraping data from multiple known platforms. Scrapy + Playwright pipeline discovered 520 profiles (313 qualified), with niche, geography and influencer-scale filters, classification engine, AI personalization and outreach audit log.",
@@ -84,9 +90,11 @@ export const minorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["React", "Next.js", "Scrapy", "Playwright", "Python"],
     liveLink: "https://exspo-mailing-agent-v1.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/exspo-mailing-agent",
   },
   {
     image: "/projects/minor/instant-mechanic.png",
+    video: "/projects/minor/instant-mechanic.mp4",
     title: "Instant Mechanic – AI Car Care Platform",
     description:
       "One platform for every car need — instant roadside help in 20 minutes, AI-powered diagnosis, transparent repair bills, and complete car care membership. Delhi NCR's trusted car care with AI Check, live service history and coverage.",
@@ -100,9 +108,11 @@ export const minorProjects: ProjectType[] = [
       "AI Diagnosis",
     ],
     liveLink: "https://instant-mechanic-task.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/instant-mechanic-task",
   },
   {
     image: "/projects/minor/saathi-v2.png",
+    video: "/projects/minor/saathi-v2.mp4",
     title: "Saathi V2",
     description:
       "Saathi V2 is my latest project, a comprehensive platform designed to provide support and resources for students. It features a modern UI and robust backend for a seamless user experience.",
@@ -110,9 +120,11 @@ export const minorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
     liveLink: "https://saathi-v2.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/FAFO",
   },
   {
     image: "/projects/minor/esecure.png",
+    video: "/projects/minor/esecure.mp4",
     title: "ESECURE – AI T&C Analyzer",
     description:
       "Shipped a Chrome Extension + full-stack web app that ingests raw T&C text and returns a structured Gemini AI analysis including flagged risky clauses and a safety score.",
@@ -120,9 +132,11 @@ export const minorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["Flask", "React", "TypeScript", "Gemini API"],
     liveLink: "https://esecure-orcin.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/ESECURE",
   },
   {
     image: "/projects/minor/canvas-blog-4u.png",
+    video: "/projects/minor/canvas-blog-4u.mp4",
     title: "Canvas4Blog – RAG Research Blogging",
     description:
       "Multi-source RAG pipeline that ingests a cluster of user-linked blogs, chunks and embeds content into a vector store, and auto-drafts context-aware research posts grounded in user knowledge.",
@@ -130,9 +144,11 @@ export const minorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["React", "Python", "LangChain", "RAG"],
     liveLink: "https://canvas4blog.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/blog-app",
   },
   {
     image: "/projects/minor/plantcare-ai.png",
+    video: "/projects/minor/plantcare-ai.mp4",
     title: "PlantCare AI – Rice Disease Detection",
     description:
       "Achieved 96.67% validation accuracy on a 3-class rice leaf disease classifier; benchmarked 6 architectures and selected Xception as optimal via systematic ablation.",
@@ -140,9 +156,11 @@ export const minorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["TensorFlow", "Keras", "Python", "Xception"],
     liveLink: "https://plantcare-ai-4ojf.onrender.com/",
+    repoLink: "https://github.com/honoursbhaduria/PlantCare-AI-Advanced-Plant-Disease-Detection-Using-Transfer-Learning",
   },
   {
     image: "/projects/minor/djnagoo-zero-to-pro.png",
+    video: "/projects/minor/djnagoo-zero-to-pro.mp4",
     title: "Django Zero to Pro Course",
     description:
       "Comprehensive course designed to guide you from beginner to advanced levels, with practical projects covering models, views, forms, auth, and deployment.",
@@ -150,5 +168,6 @@ export const minorProjects: ProjectType[] = [
     isUpdatingConstantly: true,
     technologies: ["Django", "Python"],
     liveLink: "https://django-from-zero-to-pro.vercel.app/",
+    repoLink: "https://github.com/honoursbhaduria/Django-From-Zero-to-Pro",
   },
 ];

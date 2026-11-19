@@ -1,20 +1,16 @@
-"use client";
-import React from "react";
+import Link from "next/link";
 import SectionDivider from "@/components/SectionDivider";
 import SectionHeading from "@/components/SectionHeading";
 import SectionHeadingPill from "@/components/SectionHeadingPill";
 import { FolderGit2 } from "lucide-react";
-import ProjectTabs, {
-  ProjectTabType,
-} from "@/components/projects/ProjectTabs";
 import MajorProjectsSection from "@/sections/projects/MajorProjectsSection";
-import MinorProjectsSection from "@/sections/projects/MinorProjectsSection";
-import UsersProjectsSection from "@/sections/projects/UsersProjectsSection";
-import { projectCounts } from "@/data/projects";
+import { majorProjects, usersProjects, projectCounts } from "@/data/projects";
 
 export default function ProjectsSection() {
-  const [activeTab, setActiveTab] = React.useState<ProjectTabType>("all");
-
+  const movieDog = usersProjects.find((project) => project.liveLink === "https://moviedog.vercel.app/");
+  const featuredProjects = majorProjects.map((project) =>
+    project.liveLink === "https://anime-kai-rho.vercel.app/" && movieDog ? movieDog : project
+  );
   return (
     <>
       <section className="w-full scroll-m-27.5" id="projects">
@@ -23,41 +19,20 @@ export default function ProjectsSection() {
             <FolderGit2 size={18} className="text-pink-400" />
             <p>Projects</p>
           </SectionHeadingPill>
-
-          <SectionHeading subText="Projects categorized by scale and impact — from production systems serving active users, to deep-engineering flagship applications, and specialized developer tools.">
-            <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+          <SectionHeading subText="A selection of my major full-stack and AI projects. Explore the full collection for more applications, experiments, and developer tools.">
+            <span className="flex flex-wrap items-center gap-3">
               <span>My Creations</span>
-              <div className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-0.5 sm:py-1 bg-white/5 border border-white/10 rounded-full">
-                <span className="text-[11px] sm:text-xs font-medium text-zinc-400 uppercase tracking-wider sm:tracking-widest">
-                  {projectCounts.total} Projects Live
-                </span>
-              </div>
-            </div>
+              <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-zinc-400">{projectCounts.major} Major Projects</span>
+            </span>
           </SectionHeading>
-
-          {/* Category Tabs for Fast Switching */}
-          <ProjectTabs activeTab={activeTab} setActiveTab={setActiveTab} />
-
-          {/* Categorized Project Sections */}
-          <div className="space-y-10 sm:space-y-14 pt-2">
-            {/* 1. Major Projects Section */}
-            {(activeTab === "all" || activeTab === "major") && (
-              <MajorProjectsSection />
-            )}
-
-            {/* 2. Minor Projects Section */}
-            {(activeTab === "all" || activeTab === "minor") && (
-              <MinorProjectsSection isSingleTab={activeTab === "minor"} />
-            )}
-
-            {/* 3. Projects with Users Section (Live in Production) */}
-            {(activeTab === "all" || activeTab === "users") && (
-              <UsersProjectsSection />
-            )}
+          <MajorProjectsSection projects={featuredProjects} />
+          <div className="flex justify-center pt-2">
+            <Link href="/projects" className="inline-flex items-center gap-2 rounded-xl border border-zinc-700 bg-zinc-900/60 px-5 py-3 text-sm font-medium text-zinc-200 transition hover:border-zinc-500 hover:bg-zinc-800 hover:text-white">
+              View all {projectCounts.total} projects
+            </Link>
           </div>
         </div>
       </section>
-
       <SectionDivider />
     </>
   );

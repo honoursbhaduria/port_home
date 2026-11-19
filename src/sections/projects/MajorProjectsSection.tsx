@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
 import ProjectCard from "@/components/ProjectCard";
+import { ProjectType } from "@/types";
 import { majorProjects } from "@/data/projects";
 
-export default function MajorProjectsSection() {
+export default function MajorProjectsSection({ projects = majorProjects }: { projects?: ProjectType[] }) {
   return (
     <div id="major-projects" className="space-y-4">
       <div className="flex items-start sm:items-center justify-between flex-wrap gap-2 pb-2 border-b border-zinc-900/80">
@@ -16,12 +17,12 @@ export default function MajorProjectsSection() {
           </p>
         </div>
         <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20 shrink-0 self-start sm:self-auto">
-          {majorProjects.length} Projects
+          {projects.length} Projects
         </span>
       </div>
 
       <div className="grid grid-cols-1 gap-6">
-        {majorProjects.map((project, idx) => (
+        {projects.map((project, idx) => (
           <ProjectCard key={project.title} project={project} idx={idx} />
         ))}
       </div>

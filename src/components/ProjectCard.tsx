@@ -3,6 +3,7 @@ import { ProjectType } from "@/types";
 import React from "react";
 import SkillsBadge from "./SkillsBadge";
 import Link from "next/link";
+import WebsitePreview from "./WebsitePreview";
 import { motion } from "framer-motion";
 
 export default function ProjectCard({
@@ -13,7 +14,6 @@ export default function ProjectCard({
   idx: number;
 }) {
   const isCompleted: boolean = project.status === "Completed";
-  const [imgError, setImgError] = React.useState(!project.image);
 
   return (
     <motion.div
@@ -22,67 +22,7 @@ export default function ProjectCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: idx * 0.08 }}
     >
-      <div className="w-full aspect-[16/10] md:aspect-auto md:h-[240px] md:w-[450px] shrink-0 overflow-hidden relative bg-zinc-950 rounded-xl border border-zinc-900/80 group-hover:border-zinc-700/50 transition-colors duration-500">
-        {!imgError && project.image ? (
-          <img
-            src={project.image}
-            alt={project.title}
-            onError={() => setImgError(true)}
-            className="w-full h-full object-cover object-top rounded-xl transform group-hover:scale-105 transition-transform duration-700 ease-out"
-          />
-        ) : (
-          <div className="w-full h-full relative flex flex-col items-center justify-center overflow-hidden bg-black">
-            {/* Animated Background Proxy */}
-            <div className="absolute inset-0 opacity-20">
-              <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-[spin_20s_linear_infinite] bg-[conic-gradient(from_0deg,transparent,rgba(168,85,247,0.4),transparent)]" />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,black_70%)]" />
-            </div>
-
-            {/* Geometric Proxy Shapes */}
-            <div className="relative z-10 flex flex-col items-center gap-4">
-              <div className="relative">
-                <motion.div
-                  animate={{
-                    scale: [1, 1.1, 1],
-                    opacity: [0.3, 0.6, 0.3],
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  className="absolute -inset-4 bg-pink-500/20 blur-xl rounded-full"
-                />
-                <div className="size-16 rounded-2xl bg-zinc-900 border border-white/10 flex items-center justify-center shadow-2xl relative z-10">
-                  <span className="text-3xl font-black bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent">
-                    {project.title.charAt(0)}
-                  </span>
-                </div>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <p className="text-[11px] text-white font-bold uppercase tracking-[0.2em]">
-                  {project.title}
-                </p>
-                <div className="h-[1px] w-12 bg-gradient-to-r from-transparent via-zinc-500 to-transparent mt-2" />
-              </div>
-            </div>
-
-            {/* Scanning Line Effect */}
-            <motion.div
-              animate={{
-                top: ["-10%", "110%"],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-              className="absolute left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-pink-500/30 to-transparent z-20"
-            />
-          </div>
-        )}
-      </div>
+      <WebsitePreview image={project.image} video={project.video} title={project.title} />
 
       <div className="space-y-3 sm:space-y-4 flex-1 py-1 md:py-2 flex flex-col justify-between">
         <div className="space-y-2.5 sm:space-y-3">
